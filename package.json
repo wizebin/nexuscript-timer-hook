@@ -1,7 +1,7 @@
 {
   "name": "nexuscript-timer-hook",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trigger nexuscript hooks on an interval",
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack --mode development",
@@ -15,5 +15,17 @@
   },
   "dependencies": {
     "nexusdk": "github:wizebin/nexusdk"
+  },
+  "nexuscript": {
+    "type": "hook",
+    "author": "nexuscript",
+    "price": "free",
+    "configuration": {
+      "interval": "number"
+    },
+    "category": "time",
+    "build_command": "npm run build",
+    "dist_folder": "dist",
+    "dist_file": "dist/main.js"
   }
 }
